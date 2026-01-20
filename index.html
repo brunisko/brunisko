@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Žijeme len raz – empatická podpora žien</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a class="logo" href="#hero" data-content="footer.title">Žijeme len raz</a>
+      <button class="nav-toggle" aria-label="Otvoriť menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about" data-nav="0">O nás</a></li>
+        <li><a href="#help" data-nav="1">Ako pomáhame</a></li>
+        <li><a href="#stories" data-nav="2">Príbehy</a></li>
+        <li><a href="#gallery" data-nav="3">Galéria</a></li>
+        <li><a href="#support" data-nav="4">Podporiť</a></li>
+        <li><a href="#contact" data-nav="5">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero reveal">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-tag" data-content="hero.tagline">Občianske združenie</p>
+        <h1 data-content="hero.headline">Aby v tom ženy neboli samé.</h1>
+        <p class="hero-subtext" data-content="hero.subtext">
+          Sprevádzame ženy, ktoré prechádzajú náročným obdobím. Pomáhame nájsť oporu, informácie a komunitu.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-cta="hero.cta1" href="#contact">Chcem pomoc</a>
+          <a class="btn btn-ghost" data-cta="hero.cta2" href="#support">Chcem podporiť</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-content="about.title">O nás</h2>
+          <p data-content="about.body">
+            Sme občianske združenie Žijeme len raz. Vytvárame bezpečný priestor, kde ženy nájdu empatiu, porozumenie a zmysluplné prepojenia.
+          </p>
+        </div>
+        <div class="values" data-list="about.values">
+          <div class="value-card">Ľudskosť v každom rozhovore</div>
+          <div class="value-card">Rešpekt k príbehu a tempo každého človeka</div>
+          <div class="value-card">Komunita, ktorá drží spolu</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="help" class="section section-alt reveal">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-content="sections.help.title">Ako pomáhame</h2>
+          <p data-content="sections.help.text">Malé kroky, veľká úľava. Pracujeme citlivo, s rešpektom a bez tlaku.</p>
+        </div>
+        <div class="card-grid" data-list="helpCards"></div>
+      </div>
+    </section>
+
+    <section id="stories" class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-content="sections.stories.title">Príbehy</h2>
+          <p data-content="sections.stories.text">Slová žien, ktoré našli oporu v komunite.</p>
+        </div>
+        <div class="quote-grid" data-list="stories"></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section section-alt reveal">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-content="sections.gallery.title">Galéria</h2>
+          <p data-content="sections.gallery.text">Momentky bezpečia, blízkosti a podpory.</p>
+        </div>
+        <div class="gallery-grid" data-list="galleryImages"></div>
+      </div>
+    </section>
+
+    <section id="support" class="section reveal">
+      <div class="container">
+        <div class="section-header">
+          <h2 data-content="sections.support.title">Podporiť</h2>
+          <p data-content="sections.support.text">Pomôžte nám tvoriť priestor, kde sa ženy cítia vypočuté.</p>
+        </div>
+        <div class="card-grid" data-list="supportCards"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt reveal">
+      <div class="container contact-grid">
+        <div>
+          <div class="section-header">
+            <h2 data-content="contact.title">Kontakt</h2>
+            <p data-content="contact.intro">Napíšte nám. Ozveme sa s citlivosťou a rešpektom.</p>
+          </div>
+          <form class="contact-form" novalidate>
+            <label>
+              <span data-content="contact.form.nameLabel">Meno</span>
+              <input type="text" name="name" required />
+            </label>
+            <label>
+              <span data-content="contact.form.emailLabel">Email</span>
+              <input type="email" name="email" required />
+            </label>
+            <label>
+              <span data-content="contact.form.messageLabel">Správa</span>
+              <textarea name="message" rows="4" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit" data-content="contact.form.submitLabel">Odoslať</button>
+            <p class="form-message" aria-live="polite"></p>
+          </form>
+        </div>
+        <aside class="contact-info">
+          <h3 data-content="contact.contactsTitle">Kontakty</h3>
+          <ul>
+            <li><strong>Email:</strong> <span data-content="contact.info.email">kontakt@zijemelenraz.sk</span></li>
+            <li><strong>Instagram:</strong> <span data-content="contact.info.instagram">@zijemelenraz</span></li>
+            <li><strong>Facebook:</strong> <span data-content="contact.info.facebook">facebook.com/zijemelenraz</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4 data-content="footer.title">Žijeme len raz</h4>
+        <p data-content="footer.description">Empatická podpora žien na Slovensku.</p>
+      </div>
+      <div>
+        <p data-content="footer.copyright">© 2024 Žijeme len raz. Všetky práva vyhradené.</p>
+        <a class="admin-link" href="admin.html" data-content="footer.adminLink">Admin</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Zavrieť">×</button>
+    <button class="lightbox-nav prev" aria-label="Predchádzajúci">‹</button>
+    <img alt="" />
+    <button class="lightbox-nav next" aria-label="Ďalší">›</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

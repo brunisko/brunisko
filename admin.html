@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin – Žijeme len raz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      background: #f4f2ef;
+    }
+
+    .admin-shell {
+      display: grid;
+      grid-template-columns: minmax(220px, 260px) 1fr;
+      min-height: 100vh;
+    }
+
+    .admin-sidebar {
+      background: #1f2421;
+      color: rgba(255, 255, 255, 0.85);
+      padding: 2rem 1.5rem;
+    }
+
+    .admin-sidebar h1 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .admin-sidebar p {
+      font-size: 0.85rem;
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 1.5rem;
+    }
+
+    .admin-nav {
+      list-style: none;
+      display: grid;
+      gap: 0.6rem;
+    }
+
+    .admin-nav button {
+      width: 100%;
+      text-align: left;
+      padding: 0.6rem 0.9rem;
+      border-radius: 10px;
+      border: none;
+      background: transparent;
+      color: inherit;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .admin-nav button.active,
+    .admin-nav button:hover {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .admin-main {
+      padding: 2.5rem 5%;
+    }
+
+    .admin-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-bottom: 2rem;
+    }
+
+    .admin-panel {
+      background: #fff;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .admin-panel h2 {
+      margin-bottom: 1rem;
+    }
+
+    .admin-panel label {
+      display: grid;
+      gap: 0.4rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .admin-panel input,
+    .admin-panel textarea {
+      padding: 0.7rem 1rem;
+      border-radius: 10px;
+      border: 1px solid rgba(31, 36, 33, 0.2);
+      font: inherit;
+    }
+
+    .list-item {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 0.6rem;
+      align-items: center;
+      margin-bottom: 0.8rem;
+    }
+
+    .list-actions {
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .list-actions button {
+      border: none;
+      background: #edf0ed;
+      padding: 0.4rem 0.6rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .gate {
+      max-width: 420px;
+      margin: 10vh auto 0;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .gate p {
+      color: var(--muted);
+      margin: 1rem 0;
+    }
+
+    @media (max-width: 900px) {
+      .admin-shell {
+        grid-template-columns: 1fr;
+      }
+
+      .admin-sidebar {
+        position: sticky;
+        top: 0;
+        z-index: 5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gate" id="accessGate">
+    <h2>Skryté – len pre správcu</h2>
+    <p>Táto stránka je určená len pre internú správu obsahu. Overenie je len dočasné a nie je bezpečné.</p>
+    <label>
+      Admin kľúč
+      <input type="password" id="adminKeyInput" placeholder="Zadajte kľúč" />
+    </label>
+    <button class="btn btn-primary" id="adminKeySubmit">Vstúpiť</button>
+    <p class="form-message" id="adminGateMessage"></p>
+  </div>
+
+  <div class="admin-shell" id="adminShell" hidden>
+    <aside class="admin-sidebar">
+      <h1>Žijeme len raz</h1>
+      <p>Skrytý admin panel – obsah stránky.</p>
+      <ul class="admin-nav">
+        <li><button data-section="hero" class="active">Hero</button></li>
+        <li><button data-section="about">O nás</button></li>
+        <li><button data-section="help">Ako pomáhame</button></li>
+        <li><button data-section="stories">Príbehy</button></li>
+        <li><button data-section="gallery">Galéria</button></li>
+        <li><button data-section="support">Podporiť</button></li>
+        <li><button data-section="contact">Kontakt</button></li>
+      </ul>
+    </aside>
+    <main class="admin-main">
+      <div class="admin-toolbar">
+        <button class="btn btn-primary" id="saveBtn">Uložiť</button>
+        <button class="btn btn-ghost" id="resetBtn">Reset na pôvodné</button>
+        <button class="btn btn-ghost" id="exportBtn">Export JSON</button>
+        <label class="btn btn-ghost" for="importInput">Import JSON</label>
+        <input type="file" id="importInput" accept="application/json" hidden />
+      </div>
+      <section class="admin-panel" id="editor"></section>
+    </main>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
