@@ -1,0 +1,132 @@
+{
+  "navigation": [
+    "O nás",
+    "Ako pomáhame",
+    "Príbehy",
+    "Galéria",
+    "Podporiť",
+    "Kontakt"
+  ],
+  "hero": {
+    "tagline": "Občianske združenie",
+    "headline": "Aby v tom ženy neboli samé.",
+    "subtext": "Sprevádzame ženy, ktoré prechádzajú náročným obdobím. Pomáhame nájsť oporu, informácie a komunitu.",
+    "cta1": "Chcem pomoc",
+    "cta2": "Chcem podporiť"
+  },
+  "about": {
+    "title": "O nás",
+    "body": "Sme občianske združenie Žijeme len raz. Vytvárame bezpečný priestor, kde ženy nájdu empatiu, porozumenie a zmysluplné prepojenia. Veríme, že aj v náročných chvíľach má ľudská blízkosť veľkú silu.",
+    "values": [
+      "Ľudskosť v každom rozhovore",
+      "Rešpekt k príbehu a tempo každého človeka",
+      "Komunita, ktorá drží spolu"
+    ]
+  },
+  "sections": {
+    "help": {
+      "title": "Ako pomáhame",
+      "text": "Malé kroky, veľká úľava. Pracujeme citlivo, s rešpektom a bez tlaku."
+    },
+    "stories": {
+      "title": "Príbehy",
+      "text": "Slová žien, ktoré našli oporu v komunite."
+    },
+    "gallery": {
+      "title": "Galéria",
+      "text": "Momentky bezpečia, blízkosti a podpory."
+    },
+    "support": {
+      "title": "Podporiť",
+      "text": "Pomôžte nám tvoriť priestor, kde sa ženy cítia vypočuté."
+    }
+  },
+  "helpCards": [
+    {
+      "icon": "🤝",
+      "title": "Sprevádzanie a podpora",
+      "text": "Sme pri vás, keď potrebujete vypočuť, povzbudiť alebo len byť spolu."
+    },
+    {
+      "icon": "🫶",
+      "title": "Bezpečný priestor na rozhovor",
+      "text": "Ponúkame citlivý a dôverný priestor na zdieľanie bez hodnotenia."
+    },
+    {
+      "icon": "🧭",
+      "title": "Prepojenie na užitočné zdroje",
+      "text": "Pomôžeme nasmerovať k overeným informáciám a podpore v komunite."
+    },
+    {
+      "icon": "🌿",
+      "title": "Komunita, ktorá drží spolu",
+      "text": "Budujeme sieť ľudí, ktorí chcú byť nápomocní a prítomní."
+    }
+  ],
+  "stories": [
+    {
+      "quote": "Našla som miesto, kde môžem hovoriť bez strachu a nikto ma netlačí do rýchlych riešení.",
+      "name": "Anonymne"
+    },
+    {
+      "quote": "Najviac mi pomohlo vedomie, že v tom nie som sama. Aj malé povzbudenie má veľkú hodnotu.",
+      "name": "Anonymne"
+    },
+    {
+      "quote": "Stretnutia mi dali pokoj a nádej. Vrátila sa mi chuť byť medzi ľuďmi.",
+      "name": "Anonymne"
+    }
+  ],
+  "galleryImages": [
+    "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1491349174775-aaafddd81942?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
+    "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+  ],
+  "supportCards": [
+    {
+      "title": "2 % z dane",
+      "text": "Jednoduchý spôsob, ako nás podporiť bez ďalších nákladov. Každé percento pomáha budovať bezpečné miesto.",
+      "button": "Chcem darovať 2 %"
+    },
+    {
+      "title": "Dar",
+      "text": "Aj menší dar nám umožní organizovať stretnutia, tvorbu materiálov a komunitné aktivity.",
+      "button": "Poslať dar"
+    },
+    {
+      "title": "Spolupráca",
+      "text": "Hľadáme partnerov, ktorí chcú byť súčasťou citlivej a zmysluplnej podpory pre ženy.",
+      "button": "Ponúknuť spoluprácu"
+    }
+  ],
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Napíšte nám. Ozveme sa s citlivosťou a rešpektom.",
+    "contactsTitle": "Kontakty",
+    "form": {
+      "nameLabel": "Meno",
+      "emailLabel": "Email",
+      "messageLabel": "Správa",
+      "submitLabel": "Odoslať",
+      "successMessage": "Ďakujeme za správu. Ozveme sa čo najskôr.",
+      "errorMessage": "Prosím, vyplňte všetky polia."
+    },
+    "info": {
+      "email": "kontakt@zijemelenraz.sk",
+      "instagram": "@zijemelenraz",
+      "facebook": "facebook.com/zijemelenraz"
+    }
+  },
+  "footer": {
+    "title": "Žijeme len raz",
+    "description": "Empatická podpora žien na Slovensku.",
+    "copyright": "© 2024 Žijeme len raz. Všetky práva vyhradené.",
+    "adminLink": "Admin"
+  }
+}
